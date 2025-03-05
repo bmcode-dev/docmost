@@ -7,7 +7,7 @@ services:
       - db
       - redis
     environment:
-      APP_URL: 'https://docmost.brianmason.net'
+      APP_URL: 'http://localhost:3000'
       APP_SECRET: 'c834e64aae7cab623c96b82b18736e3dead16a0fd454a4e447667d1402887ec7'
       DATABASE_URL: 'postgresql://docmost:Railay@2016@db:5432/docmost?schema=public'
       REDIS_URL: 'redis://redis:6379'
