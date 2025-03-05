@@ -7,9 +7,9 @@ services:
       - db
       - redis
     environment:
-      APP_URL: 'http://localhost:3000'
-      APP_SECRET: 'REPLACE_WITH_LONG_SECRET'
-      DATABASE_URL: 'postgresql://docmost:STRONG_DB_PASSWORD@db:5432/docmost?schema=public'
+      APP_URL: 'https://docmost.brianmason.net'
+      APP_SECRET: 'c834e64aae7cab623c96b82b18736e3dead16a0fd454a4e447667d1402887ec7'
+      DATABASE_URL: 'postgresql://docmost:Railay@2016@db:5432/docmost?schema=public'
       REDIS_URL: 'redis://redis:6379'
     ports:
       - "3000:3000"
@@ -22,7 +22,7 @@ services:
     environment:
       POSTGRES_DB: docmost
       POSTGRES_USER: docmost
-      POSTGRES_PASSWORD: STRONG_DB_PASSWORD
+      POSTGRES_PASSWORD: Railay@2016
     restart: unless-stopped
     volumes:
       - db_data:/var/lib/postgresql/data
